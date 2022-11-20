@@ -1,10 +1,12 @@
 <html>
-<input type=password>
-<body>
-<big>
-<center>
-input the password
-  </big>
-  </center>
-  </body>
+<input type= "password" name="password"> <br><br>
+<input type="password" name="retype_password" > <br><br>
+<script>
+function validate() {
+var x= document.getElementById("password");
+    var y= document.getElementById("retype_password");
+if(x.value==y.value) return;
+else alert("password not same");
+}
+</script>
 </html>
